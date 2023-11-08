@@ -1,36 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/Style.css">
-    <title>Example</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Baloon</title>
+	<link rel="stylesheet" href="css/style.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Outfit:100,200,300,regular,500,600,700,800,900&display=swap" rel="stylesheet" />
 </head>
+
 <body>
-    <div class="text-container">
-        Example
-    </div>
-    <div class="gradient-bg">
-        <svg xmlns="http://www.w3.org/2000/svg">
-            <defs>
-                <filter id="goo">
-                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8"
-                        result="goo" />
-                    <feBlend in="SourceGraphic" in2="goo" />
-                </filter>
-            </defs>
-        </svg>
-        <div class="gradients-container">
-            <div class="g1"></div>
-            <div class="g2"></div>
-            <div class="g3"></div>
-            <div class="g4"></div>
-            <div class="g5"></div>
-            <div class="interactive"></div>
-        </div>
-    </div>
-    <script src="js/script.js"></script>
+	<div class="wrapper">
+		<div class="background">
+			<svg xmlns="http://www.w3.org/2000/svg">
+				<defs>
+					<filter id="goo">
+						<feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+						<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8"
+							result="goo" />
+						<feBlend in="SourceGraphic" in2="goo" />
+					</filter>
+				</defs>
+			</svg>
+			<div class="gradients-container">
+				<div class="g1"></div>
+				<div class="g2"></div>
+				<div class="g3"></div>
+				<div class="g4"></div>
+				<div class="g5"></div>
+				<div class="interactive"></div>
+			</div>
+		</div>
+		<header class="header">
+	<div class="header__container">
+		<div class="header__logo"><img src="img/logo-balloon.svg" alt="logo"></div>
+		<button type="button" class="header__burger burger">
+			<div class="burger__line burger__line-01"></div>
+			<div class="burger__line burger__line-02"></div>
+			<div class="burger__line burger__line-03"></div>
+		</button>
+	</div>
+</header>
+		<main class="page">
+			<section class="hero">
+				<div class="hero__frames frames-hero">
+					<div class="frames-hero__frame frames-hero__frame-transparent frames-hero__frame-main">
+						<h1 class="frames-hero__title"><span>W</span><span>e</span> <span>a</span><span>r</span><span>e</span>
+						<span>B</span><span>a</span><span>l</span><span>l</span><span>o</span><span>o</span><span>n</span></h1>
+						<div class="frames-hero__scroll">
+							<div class="frames-hero__circle">
+								<svg  viewBox="0 0 72 72" fill="none"  xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M72 36C72 55.8823 55.8823 72 36 72C16.1177 72 0 55.8823 0 36C0 16.1177 16.1177 0 36 0C55.8823 0 72 16.1177 72 36ZM1.79382 36C1.79382 54.8915 17.1084 70.2062 36 70.2062C54.8915 70.2062 70.2062 54.8915 70.2062 36C70.2062 17.1084 54.8915 1.79382 36 1.79382C17.1084 1.79382 1.79382 17.1084 1.79382 36Z"
+										  stroke="url(#paint0_linear_1_250)" />
+									<defs>
+										<linearGradient id="paint0_linear_1_250" x1="36" y1="0" x2="36" y2="72" gradientUnits="userSpaceOnUse">
+											<stop stop-color="#5A00E9" />
+											<stop offset="0.46875" stop-color="#FF1CBF" />
+											<stop offset="1" stop-color="#FFC9E7" />
+										</linearGradient>
+									</defs>
+								</svg>
+
+							</div>
+							<span>Scroll</span></div>
+					</div>
+					<div class="frames-hero__frame frames-hero__frame-transparent frames-hero__frame-01">
+						<div class="frames-hero__label frames-hero__label-1">
+							<span>Your </span>
+							 <span>creative </span>
+							<span>partners </span>
+							 <span>in </span>
+							  <span>bringing </span>
+							   <span>your </span>
+							   <br>
+							<span>ideas </span>
+							 <span>to </span>
+							  <span>life </span>
+							   <span>through </span>
+							<span>video </span>
+							 <span>and </span>
+							  <span>media </span>
+						</div>
+					</div>
+					<div class="frames-hero__frame frames-hero__frame-02">
+						<video autoplay muted loop src="files/1920x1080-Video01.mp4"></video>
+						<div class="frames-hero__label frames-hero__label-2"><span>We</span> <span>pride</span>
+							<span>ourselves</span> <span>on</span> <span>accepting</span> <span>challenges</span>
+							<br> <span>and</span> <span>delivering</span> <span>projects</span> <span>on</span>
+							<span>time</span>
+						</div>
+					</div>
+					<div class="frames-hero__frame frames-hero__frame-03">
+						<video autoplay muted loop src="files/1920x1080-Video02.mp4"></video>
+						<div class="frames-hero__label frames-hero__label-3"><span>A</span> <span>versatile,</span>
+							<span>highly</span> <span>skilled</span> <span>team</span> <span>ready</span>
+							<span>to</span> <br> <span>meet</span> <span>your</span> <span>unique</span>
+							<span>needs</span>
+
+						</div>
+					</div>
+					<div class="frames-hero__frame frames-hero__frame-04">
+						<video autoplay muted loop src="files/1920x1080-Video03.mp4"></video>
+						<div class="frames-hero__label frames-hero__label-4"><span>We</span> <span>manage</span> <span>every</span> <span>aspect</span> <span>of</span> <span>production,</span> <br>
+						<span>from</span> <span>concept</span> <span>to</span> <span>final</span> <span>edit</span>
+</div>
+					</div>
+					<div class="frames-hero__frame frames-hero__frame-05">
+						<video autoplay muted loop src="files/1920x1080-Video04.mp4"></video>
+						<div class="frames-hero__label frames-hero__label-5"><span>Making</span> <span>it</span> <span>easy</span> <span>for</span> <span>you</span> <span>to</span> <span>get</span>
+						<span>your</span> <span>message</span> <br> <span>and</span> <span>content</span> <span>to</span> <span>your</span>
+						<span>target</span> <span>markets</span>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="cases">
+				<div class="cases__container">
+					<h3 class="cases__title title">Case Studies</h3>
+					<div class="cases__items">
+						<a href="" class="cases__item">AHC Peony Bright</a>
+						<a href="" class="cases__item">Dove 3D</a>
+						<a href="" class="cases__item">Torabhaig Allt Gleann</a>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer"></footer>
+	</div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="js/app.min.js"></script>
+
 </html>
