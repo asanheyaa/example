@@ -687,7 +687,7 @@ section {
 }
 .frames-hero__label span {
   display: inline-block;
-  transform: translate(0, 50%);
+  transform: translate(0, 30%);
   opacity: 0;
 }
 .cases {
