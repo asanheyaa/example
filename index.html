@@ -9,7 +9,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Outfit:100,200,300,regular,500,600,700,800,900&display=swap" rel="stylesheet" />
 </head>
 
-<body>
+<body data-barba="wrapper">
 	<div class="wrapper">
 
 
@@ -37,6 +37,8 @@
 				<div class="background__g1"></div>
 				<div class="background__g2"></div>
 				<div class="background__g3"></div>
+				<div class="background__g4"></div>
+				<div class="background__g5"></div>
 			</div>
 		</div>
 		<header class="header">
@@ -48,7 +50,11 @@
 			<div class="burger__line burger__line-02"></div>
 			<div class="burger__line burger__line-03"></div>
 		</button>
+		<!-- <button id="ref" style="z-index: 10; color: #FFF; background:#FFF;" type="button">ref</button> -->
 		<div class="menu ">
+			<div class="menu__background">
+				<div class="menu__background-item"></div>
+			</div>
 			<ul class="menu__list">
 				<li class="menu__item">
 					<a href="index.html" class="menu__link"> Main</a>
@@ -64,234 +70,219 @@
 	</div>
 </header>
 		<main class="page">
-			<section class="hero">
-				<div class="hero__frames frames-hero">
-					<div class="frames-hero__frame frames-hero__frame-transparent frames-hero__frame-main">
-						<h1 class="frames-hero__title"><span>W</span><span>e</span>
-							<span>a</span><span>r</span><span>e</span>
-							<span>B</span><span>a</span><span>l</span><span>l</span><span>o</span><span>o</span><span>n</span>
-						</h1>
-						<div class="frames-hero__scroll">
-							<div class="frames-hero__circle">
-								<svg>
-									<circle cx="37" cy="41.5" r="35" stroke="url(#paint0_linear_1_250)" stroke-width="3"
-										fill="transparent" />
-									<defs>
-										<linearGradient id="paint0_linear_1_250" x1="36" y1="0" x2="36" y2="72"
-											gradientUnits="userSpaceOnUse">
-											<stop stop-color="#5A00E9" />
-											<stop offset="0.46875" stop-color="#FF1CBF" />
-											<stop offset="1" stop-color="#FFC9E7" />
-										</linearGradient>
-									</defs>
-								</svg>
-								<!-- <svg viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M72 36C72 55.8823 55.8823 72 36 72C16.1177 72 0 55.8823 0 36C0 16.1177 16.1177 0 36 0C55.8823 0 72 16.1177 72 36ZM1.79382 36C1.79382 54.8915 17.1084 70.2062 36 70.2062C54.8915 70.2062 70.2062 54.8915 70.2062 36C70.2062 17.1084 54.8915 1.79382 36 1.79382C17.1084 1.79382 1.79382 17.1084 1.79382 36Z"
-										stroke="url(#paint0_linear_1_250)" />
-									<defs>
-										<linearGradient id="paint0_linear_1_250" x1="36" y1="0" x2="36" y2="72"
-											gradientUnits="userSpaceOnUse">
-											<stop stop-color="#5A00E9" />
-											<stop offset="0.46875" stop-color="#FF1CBF" />
-											<stop offset="1" stop-color="#FFC9E7" />
-										</linearGradient>
-									</defs>
-								</svg> -->
-
-							</div>
-							<span>Scroll</span>
-						</div>
-					</div>
-					<div class="frames-hero__frame frames-hero__frame-transparent frames-hero__frame-01">
-						<div class="frames-hero__label frames-hero__label-1">
-							<span>Your </span>
-							<span>creative </span>
-							<span>partners </span>
-							<span>in </span>
-							<span>bringing </span>
-							<span>your </span>
-
-							<br>
-							<span>ideas </span>
-							<span>to </span>
-							<span>life </span>
-							<span>through </span>
-							<span>video </span>
-							<span>and </span>
-							<span>media </span>
-						</div>
-					</div>
-					<div class="frames-hero__frame frames-hero__frame-02">
-						<video autoplay muted loop src="files/1920x1080-Video01.mp4"></video>
-						<div class="frames-hero__label frames-hero__label-2">
-							<span>We</span> <span>pride</span>
-							<span>ourselves</span> <span>on</span> <span>accepting</span> <span>challenges</span>
-							<br>
-							<span>and</span> <span>delivering</span> <span>projects</span> <span>on</span>
-							<span>time</span>
-						</div>
-					</div>
-					<div class="frames-hero__frame frames-hero__frame-03">
-						<video autoplay muted loop src="files/1920x1080-Video02.mp4"></video>
-						<div class="frames-hero__label frames-hero__label-3"><span>A</span> <span>versatile,</span>
-							<span>highly</span> <span>skilled</span> <span>team</span> <span>ready</span>
-							<span>to</span> <br> <span>meet</span> <span>your</span> <span>unique</span>
-							<span>needs</span>
-
-						</div>
-					</div>
-					<div class="frames-hero__frame frames-hero__frame-04">
-						<video autoplay muted loop src="files/1920x1080-Video03.mp4"></video>
-						<div class="frames-hero__label frames-hero__label-4"><span>We</span> <span>manage</span>
-							<span>every</span> <span>aspect</span> <span>of</span> <span>production,</span> <br>
-							<span>from</span> <span>concept</span> <span>to</span> <span>final</span> <span>edit</span>
-						</div>
-					</div>
-					<div class="frames-hero__frame frames-hero__frame-05">
-						<video autoplay muted loop src="files/1920x1080-Video04.mp4"></video>
-						<div class="frames-hero__label frames-hero__label-5"><span>Making</span> <span>it</span>
-							<span>easy</span> <span>for</span> <span>you</span> <span>to</span> <span>get</span>
-							<span>your</span> <span>message</span> <br> <span>and</span> <span>content</span>
-							<span>to</span> <span>your</span>
-							<span>target</span> <span>markets</span>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="cases">
-				<div class="cases__container">
-					<h3 class="cases__title title">Case Studies</h3>
-					<div class="cases__items">
-						<a href="" class="cases__item">AHC Peony Bright</a>
-						<a href="" class="cases__item">Dove 3D</a>
-						<a href="" class="cases__item">Torabhaig Allt Gleann</a>
-					</div>
-				</div>
-			</section>
-			<section class="reviews">
-				<div class="reviews__container">
-					<h3 class="reviews__title title">What our clients say</h3>
-					<div class="reviews__items">
-						<article class="reviews__item">
-							<a href="#" class="reviews__miniature">
-								<div class="reviews__photo"><img src="img/reviews/reviews-photo_01.jpg"
-										alt="reviews-photo"></div>
-								<button type="button" class="reviews__button-play"><img
-										src="img/icons/button-play-48px.svg" alt="button-play"></button>
-							</a>
-							<div class="reviews__info">
-								<div class="reviews__icon-dots">
-									<img src="img/icons/four-dots.svg" alt="icon-dots">
+			<div  class="dynamic-content__wrapper">
+				<div class="dynamic-content__inner" data-barba="container" data-barba-namespace="home">
+					<section class="hero">
+						<div class="hero__frames frames-hero">
+							<div class="frames-hero__frame frames-hero__frame-transparent frames-hero__frame-main">
+								<h1 class="frames-hero__title"><span>W</span><span>e</span>
+									<span>a</span><span>r</span><span>e</span>
+									<span>B</span><span>a</span><span>l</span><span>l</span><span>o</span><span>o</span><span>n</span>
+								</h1>
+								<div class="frames-hero__scroll">
+									<div class="frames-hero__circle">
+										<svg>
+											<circle cx="37" cy="41.5" r="35" stroke="url(#paint0_linear_1_250)" stroke-width="3"
+												fill="transparent" />
+											<defs>
+												<linearGradient id="paint0_linear_1_250" x1="36" y1="0" x2="36" y2="72"
+													gradientUnits="userSpaceOnUse">
+													<stop stop-color="#5A00E9" />
+													<stop offset="0.46875" stop-color="#FF1CBF" />
+													<stop offset="1" stop-color="#FFC9E7" />
+												</linearGradient>
+											</defs>
+										</svg>
+									</div>
+									<span>Scroll</span>
 								</div>
-								<h4 class="reviews__quote">“They just make the whole thing incredibly creative”</h4>
-								<div class="reviews__name">Enzo Annunziata</div>
-								<div class="reviews__company">Amazon Prime</div>
 							</div>
-						</article>
-						<article class="reviews__item reviews__item-revers">
-							<a href="#" class="reviews__miniature">
-								<div class="reviews__photo"><img src="img/reviews/reviews-photo_02.jpg"
-										alt="reviews-photo"></div>
-								<button type="button" class="reviews__button-play"><img
-										src="img/icons/button-play-48px.svg" alt="button-play"></button>
-							</a>
-							<div class="reviews__info">
-								<div class="reviews__icon-dots">
-									<img src="img/icons/four-dots.svg" alt="icon-dots">
+							<div class="frames-hero__frame frames-hero__frame-transparent frames-hero__frame-01">
+								<div class="frames-hero__label frames-hero__label-1">
+									<span>Your </span>
+									<span>creative </span>
+									<span>partners </span>
+									<span>in </span>
+									<span>bringing </span>
+									<span>your </span>
+					
+									<br>
+									<span>ideas </span>
+									<span>to </span>
+									<span>life </span>
+									<span>through </span>
+									<span>video </span>
+									<span>and </span>
+									<span>media </span>
 								</div>
-								<h4 class="reviews__quote">“Balloon is just brilliant, they deliver on time, which is
-									great”</h4>
-								<div class="reviews__name">Dan Curtis</div>
-								<div class="reviews__company">emc3</div>
 							</div>
-						</article>
-						<article class="reviews__item">
-							<a href="#" class="reviews__miniature">
-								<div class="reviews__photo reviews__photo-op-top"><img src="img/reviews/reviews-photo_03.jpg"
-										alt="reviews-photo"></div>
-								<button type="button" class="reviews__button-play"><img
-										src="img/icons/button-play-48px.svg" alt="button-play"></button>
-							</a>
-							<div class="reviews__info">
-								<div class="reviews__icon-dots">
-									<img src="img/icons/four-dots.svg" alt="icon-dots">
+							<div class="frames-hero__frame frames-hero__frame-02">
+								<video autoplay muted loop src="files/1920x1080-Video01.mp4"></video>
+								<div class="frames-hero__label frames-hero__label-2">
+									<span>We</span> <span>pride</span>
+									<span>ourselves</span> <span>on</span> <span>accepting</span> <span>challenges</span>
+									<br>
+									<span>and</span> <span>delivering</span> <span>projects</span> <span>on</span>
+									<span>time</span>
 								</div>
-								<h4 class="reviews__quote">“Creative, professional and dependable, seamless process!”
-								</h4>
-								<div class="reviews__name">Ana Costa</div>
-								<div class="reviews__company">Pernod Ricard</div>
 							</div>
-						</article>
-					</div>
-				</div>			
-			</section>
-			<section class="partners">
-				<div class="partners__container">
-					<h2 class="partners__title">We proudly served these <span>brands</span></h2>
-					<div class="partners__items">
-						<div class="partners__item">
-							<img src="img/partners/partners__image_01.svg" alt="partner-logo">
+							<div class="frames-hero__frame frames-hero__frame-03">
+								<video autoplay muted loop src="files/1920x1080-Video02.mp4"></video>
+								<div class="frames-hero__label frames-hero__label-3"><span>A</span> <span>versatile,</span>
+									<span>highly</span> <span>skilled</span> <span>team</span> <span>ready</span>
+									<span>to</span> <br> <span>meet</span> <span>your</span> <span>unique</span>
+									<span>needs</span>
+					
+								</div>
+							</div>
+							<div class="frames-hero__frame frames-hero__frame-04">
+								<video autoplay muted loop src="files/1920x1080-Video03.mp4"></video>
+								<div class="frames-hero__label frames-hero__label-4"><span>We</span> <span>manage</span>
+									<span>every</span> <span>aspect</span> <span>of</span> <span>production,</span> <br>
+									<span>from</span> <span>concept</span> <span>to</span> <span>final</span> <span>edit</span>
+								</div>
+							</div>
+							<div class="frames-hero__frame frames-hero__frame-05">
+								<video autoplay muted loop src="files/1920x1080-Video04.mp4"></video>
+								<div class="frames-hero__label frames-hero__label-5"><span>Making</span> <span>it</span>
+									<span>easy</span> <span>for</span> <span>you</span> <span>to</span> <span>get</span>
+									<span>your</span> <span>message</span> <br> <span>and</span> <span>content</span>
+									<span>to</span> <span>your</span>
+									<span>target</span> <span>markets</span>
+								</div>
+							</div>
 						</div>
-						<div class="partners__item">
-							<img src="img/partners/partners__image_02.svg" alt="partner-logo">
+					</section>
+					<section class="cases">
+						<div class="cases__container">
+							<h3 class="cases__title title">Case Studies</h3>
+							<div class="cases__items">
+								<a href="" class="cases__item">AHC Peony Bright</a>
+								<a href="" class="cases__item">Dove 3D</a>
+								<a href="" class="cases__item">Torabhaig Allt Gleann</a>
+							</div>
 						</div>
-						<div class="partners__item">
-							<img src="img/partners/partners__image_03.svg" alt="partner-logo">
+					</section>
+					<section class="reviews">
+						<div class="reviews__container">
+							<h3 class="reviews__title title">What our clients say</h3>
+							<div class="reviews__items">
+								<article class="reviews__item">
+									<a href="#" class="reviews__miniature">
+										<div class="reviews__photo"><img src="img/reviews/reviews-photo_01.jpg" alt="reviews-photo"></div>
+										<button type="button" class="reviews__button-play"><img src="img/icons/button-play-48px.svg"
+												alt="button-play"></button>
+									</a>
+									<div class="reviews__info">
+										<div class="reviews__icon-dots">
+											<img src="img/icons/four-dots.svg" alt="icon-dots">
+										</div>
+										<h4 class="reviews__quote">“They just make the whole thing incredibly creative”</h4>
+										<div class="reviews__name">Enzo Annunziata</div>
+										<div class="reviews__company">Amazon Prime</div>
+									</div>
+								</article>
+								<article class="reviews__item reviews__item-revers">
+									<a href="#" class="reviews__miniature">
+										<div class="reviews__photo"><img src="img/reviews/reviews-photo_02.jpg" alt="reviews-photo"></div>
+										<button type="button" class="reviews__button-play"><img src="img/icons/button-play-48px.svg"
+												alt="button-play"></button>
+									</a>
+									<div class="reviews__info">
+										<div class="reviews__icon-dots">
+											<img src="img/icons/four-dots.svg" alt="icon-dots">
+										</div>
+										<h4 class="reviews__quote">“Balloon is just brilliant, they deliver on time, which is
+											great”</h4>
+										<div class="reviews__name">Dan Curtis</div>
+										<div class="reviews__company">emc3</div>
+									</div>
+								</article>
+								<article class="reviews__item">
+									<a href="#" class="reviews__miniature">
+										<div class="reviews__photo reviews__photo-op-top"><img src="img/reviews/reviews-photo_03.jpg"
+												alt="reviews-photo"></div>
+										<button type="button" class="reviews__button-play"><img src="img/icons/button-play-48px.svg"
+												alt="button-play"></button>
+									</a>
+									<div class="reviews__info">
+										<div class="reviews__icon-dots">
+											<img src="img/icons/four-dots.svg" alt="icon-dots">
+										</div>
+										<h4 class="reviews__quote">“Creative, professional and dependable, seamless process!”
+										</h4>
+										<div class="reviews__name">Ana Costa</div>
+										<div class="reviews__company">Pernod Ricard</div>
+									</div>
+								</article>
+							</div>
 						</div>
-						<div class="partners__item">
-							<img src="img/partners/partners__image_04.svg" alt="partner-logo">
+					</section>
+					<section class="partners">
+						<div class="partners__container">
+							<h2 class="partners__title">We proudly served these <span>brands</span></h2>
+							<div class="partners__items">
+								<div class="partners__item">
+									<img src="img/partners/partners__image_01.svg" alt="partner-logo">
+								</div>
+								<div class="partners__item">
+									<img src="img/partners/partners__image_02.svg" alt="partner-logo">
+								</div>
+								<div class="partners__item">
+									<img src="img/partners/partners__image_03.svg" alt="partner-logo">
+								</div>
+								<div class="partners__item">
+									<img src="img/partners/partners__image_04.svg" alt="partner-logo">
+								</div>
+								<div class="partners__item">
+									<img src="img/partners/partners__image_05.svg" alt="partner-logo">
+								</div>
+								<div class="partners__item">
+									<img src="img/partners/partners__image_06.svg" alt="partner-logo">
+								</div>
+								<div class="partners__item">
+									<img src="img/partners/partners__image_07.svg" alt="partner-logo">
+								</div>
+								<div class="partners__item">
+									<img src="img/partners/partners__image_08.svg" alt="partner-logo">
+								</div>
+							</div>
 						</div>
-						<div class="partners__item">
-							<img src="img/partners/partners__image_05.svg" alt="partner-logo">
-						</div>
-						<div class="partners__item">
-							<img src="img/partners/partners__image_06.svg" alt="partner-logo">
-						</div>
-						<div class="partners__item">
-							<img src="img/partners/partners__image_07.svg" alt="partner-logo">
-						</div>
-						<div class="partners__item">
-							<img src="img/partners/partners__image_08.svg" alt="partner-logo">
-						</div>
-					</div>
+					</section>
 				</div>
-			</section>
-			<section class="challenge">
-				<div class="challenge__container">
-					<h3 class="challenge__title title">Set us a challenge</h3>
-					<h2 class="challenge__label"> <span class="challenge__challenge-text"></span><span class="challenge__cursor"></span></h2>
-					<div class="challenge__challenges">
-						<div class="challenge__challenge_01 challenge__challenge">
-							Film a commercial entirely from a bottle POV
-							<span
-							class="challenge__cursor-unvisible"></span>
+				<section class="challenge">
+					<div class="challenge__container">
+						<h3 class="challenge__title title">Set us a challenge</h3>
+						<h2 class="challenge__label"> <span class="challenge__challenge-text"></span><span
+								class="challenge__cursor"></span></h2>
+						<div class="challenge__challenges">
+							<div class="challenge__challenge_01 challenge__challenge">
+								Film a commercial entirely from a bottle POV
+								<span class="challenge__cursor-unvisible"></span>
+							</div>
+							<div class="challenge__challenge_02 challenge__challenge">
+								Perform a small, unexpected act of kindness.
+								<span class="challenge__cursor"></span>
+							</div>
+							<div class="challenge__challenge_03 challenge__challenge">
+								Plan and execute a mini-adventure in nature.
+								<span class="challenge__cursor"></span>
+							</div>
+							<div class="challenge__challenge_04 challenge__challenge">
+								Pick a random word and create something around it.
+								<span class="challenge__cursor"></span>
+							</div>
+							<div class="challenge__challenge_05 challenge__challenge">
+								Set a fitness goal for the week
+								<span class="challenge__cursor"></span>
+							</div>
 						</div>
-						<div class="challenge__challenge_02 challenge__challenge">
-							Perform a small, unexpected act of kindness.
-							<span
-							class="challenge__cursor"></span>
-						</div>
-						<div class="challenge__challenge_03 challenge__challenge">
-							Plan and execute a mini-adventure in nature.
-							<span
-							class="challenge__cursor"></span>
-						</div>
-						<div class="challenge__challenge_04 challenge__challenge">
-							Pick a random word and create something around it.
-							<span
-							class="challenge__cursor"></span>
-						</div>
-						<div class="challenge__challenge_05 challenge__challenge">
-							Set a fitness goal for the week
-							<span
-							class="challenge__cursor"></span>
-						</div>
+				
+						<a href="" class="challenge__button button"><span>Send us a challenge</span></a>
 					</div>
-
-					<a href="" class="challenge__button">Send us a challenge</a>
-				</div>
-			</section>
+				</section>
+			</div>
+			
 		</main>
 		<footer class="footer">
 	<div class="footer__container">
@@ -319,6 +310,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Observer.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/CustomEase.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+
 <script src="js/app.min.js"></script>
 
 </html>

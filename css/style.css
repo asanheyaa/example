@@ -126,12 +126,13 @@ body._lock {
   flex-direction: column;
   position: relative;
 }
-.wrapper__case-peony-bright {
-  color: #302f34;
-  font-weight: 300;
-}
 .wrapper__header-black .header__background {
   opacity: 1;
+}
+
+.dynamic-content__inner-peony-bright {
+  color: #302f34;
+  font-weight: 300;
 }
 
 .page {
@@ -179,6 +180,36 @@ body._lock {
 @media (max-width: 1150px) {
   .title {
     font-size: calc(26px + 14 * (100vw - 320px) / 830);
+  }
+}
+
+.button {
+  position: relative;
+  overflow: hidden;
+}
+.button span {
+  position: relative;
+  z-index: 2;
+  transition: all 0.3s ease 0s;
+}
+.button::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  padding-bottom: 100%;
+  top: 101%;
+  left: 0;
+  border-radius: 50%;
+  background: #FFF;
+  transition: all 0.5s ease 0s;
+}
+@media (any-hover: hover) {
+  .button:hover::after {
+    top: -20%;
+    scale: 1.3;
+  }
+  .button:hover span {
+    color: #ff1cbf;
   }
 }
 
@@ -640,20 +671,19 @@ section {
   display: none;
 }
 .background__gradients-container {
-  filter: blur(60px);
+  filter: blur(80px);
   width: 100%;
   height: 100%;
 }
 .background__g1 {
   position: absolute;
   background: radial-gradient(circle at center, rgba(168, 0, 115, 0.5) 0, rgba(168, 0, 115, 0.5) 50%) no-repeat;
-  mix-blend-mode: var(--blending);
   width: 30vw;
   height: 30vw;
   top: 30%;
   left: 30%;
   transform-origin: center center;
-  opacity: 1;
+  opacity: 0.3;
   border-radius: 30% 70% 70% 30%/74% 81% 19% 26%;
 }
 @media (max-width: 767.98px) {
@@ -667,13 +697,12 @@ section {
 .background__g2 {
   position: absolute;
   background: radial-gradient(circle at center, #290041 0, #290041 50%) no-repeat;
-  mix-blend-mode: var(--blending);
   width: 30vw;
   height: 30vw;
   top: 15%;
   left: 15%;
   transform-origin: calc(50% - 400px);
-  opacity: 1;
+  opacity: 0.3;
   border-radius: 37% 63% 43% 57%/35% 52% 48% 65%;
 }
 @media (max-width: 767.98px) {
@@ -685,17 +714,50 @@ section {
 .background__g3 {
   position: absolute;
   background: radial-gradient(circle at center, rgba(51, 116, 238, 0.7) 0, rgba(51, 116, 238, 0.7) 50%) no-repeat;
-  mix-blend-mode: var(--blending);
   width: 30vw;
   height: 30vw;
   top: 40%;
   left: 60%;
   transform-origin: calc(50% + 400px);
-  opacity: 1;
+  opacity: 0.3;
   border-radius: 49% 51% 75% 25%/72% 52% 48% 28%;
 }
 @media (max-width: 767.98px) {
   .background__g3 {
+    width: 50vw;
+    height: 50vw;
+  }
+}
+.background__g4 {
+  position: absolute;
+  background: #ff1cbf;
+  width: 30vw;
+  height: 30vw;
+  top: 15%;
+  left: 60%;
+  transform-origin: calc(50% + 400px);
+  opacity: 0.3;
+  border-radius: 30% 70% 70% 30%/74% 81% 19% 26%;
+}
+@media (max-width: 767.98px) {
+  .background__g4 {
+    width: 50vw;
+    height: 50vw;
+  }
+}
+.background__g5 {
+  position: absolute;
+  background: #4acceb;
+  width: 30vw;
+  height: 30vw;
+  top: 60%;
+  left: 15%;
+  transform-origin: calc(50% + 400px);
+  opacity: 0.3;
+  border-radius: 49% 51% 75% 25%/72% 52% 48% 28%;
+}
+@media (max-width: 767.98px) {
+  .background__g5 {
     width: 50vw;
     height: 50vw;
   }
@@ -707,6 +769,8 @@ section {
   left: 0;
   z-index: 100;
   width: 100%;
+  overflow: hidden;
+  max-width: calc(var(--fullscreenwidth) * 1px);
 }
 .header__background {
   background: #000;
@@ -716,11 +780,6 @@ section {
   top: 0;
   left: 0;
   z-index: 2;
-  opacity: 0;
-  transition: all 0.3s ease 0s;
-}
-.header__background._active {
-  opacity: 1;
 }
 .header__container {
   display: flex;
@@ -790,71 +849,78 @@ section {
   position: fixed;
   width: 100%;
   height: 100%;
+  top: -100%;
+  left: 0;
+  font-weight: 500;
+}
+.menu__background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
   top: 0;
   left: 0;
-  display: grid;
-  align-items: center;
+  overflow: hidden;
+}
+.menu__background-item {
+  top: -101vw;
+  position: absolute;
+  width: 100vw;
+  height: 100vw;
+  left: 0;
+  border-radius: 0 0 50% 50%;
   background: #000;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.3s ease 0s;
-  overflow: auto;
 }
-.menu._active {
-  opacity: 1;
-  visibility: visible;
-}
-.menu._active .menu__item::after {
-  width: 100%;
-}
-.menu._active .menu__link {
-  opacity: 1;
+@media (max-width: 500px) {
+  .menu__background-item {
+    width: 100vh;
+    height: 100vh;
+    top: -101vh;
+    left: -25vh;
+  }
 }
 .menu__list {
-  max-width: 480px;
+  padding-top: 120px;
+  padding-left: 156px;
+  padding-bottom: 120px;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
   width: 100%;
-  margin-top: 120px;
-  padding: 0px 15px 50px;
+  overflow: auto;
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 1150px) {
+  .menu__list {
+    padding-top: calc(100px + 20 * (100vw - 320px) / 830);
+  }
+}
+@media (max-width: 1150px) {
+  .menu__list {
+    padding-left: calc(15px + 141 * (100vw - 320px) / 830);
+  }
+}
+@media (max-width: 1150px) {
+  .menu__list {
+    padding-bottom: calc(50px + 70 * (100vw - 320px) / 830);
+  }
 }
 .menu__item {
   width: 100%;
   padding: 15px;
-  position: relative;
-}
-.menu__item::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  bottom: 0;
-  left: 0;
-  background: #fff;
-  transition: width 0.5s ease 0.3s, background 0.3s ease 0s;
-  width: 0;
-}
-@media (min-width: 991.98px) {
-  .menu__item::after {
-    background: #73727a;
-  }
-}
-@media (any-hover: hover) {
-  .menu__item:hover .menu__link {
-    color: #fff;
-  }
-  .menu__item:hover::after {
-    background: #fff;
-  }
+  overflow: hidden;
 }
 .menu__link {
-  display: block;
-  font-size: 35px;
-  transition: color 0.3s ease 0s, transform 0.3s ease 0s, opacity 0.5s ease 0.6s;
-  opacity: 0;
-  transform: scale(1);
+  display: inline-block;
+  transform: translate(0, 100%);
+  font-size: 96px;
+  transition: color 0.3s ease 0s;
   color: #fff;
   line-height: 1.5;
+}
+@media (max-width: 1150px) {
+  .menu__link {
+    font-size: calc(35px + 61 * (100vw - 320px) / 830);
+  }
 }
 @media (min-width: 991.98px) {
   .menu__link {
@@ -1250,7 +1316,7 @@ section {
 .challenge {
   padding-top: 100px;
   padding-bottom: 100px;
-  color: #FFF;
+  color: #fff;
 }
 @media (max-width: 1150px) {
   .challenge {
@@ -1345,14 +1411,7 @@ section {
   padding: 12px 24px;
   border-radius: 40px;
   background: #ff1cbf;
-  transition: all 0.3s ease 0s;
   display: inline-block;
-}
-@media (any-hover: hover) {
-  .challenge__button:hover {
-    background: transparent;
-    color: #ff1cbf;
-  }
 }
 
 .footer {

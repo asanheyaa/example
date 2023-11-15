@@ -4,13 +4,13 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Baloon</title>
+	<title>Case Peony Bright</title>
 	<link rel="stylesheet" href="css/style.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Outfit:100,200,300,regular,500,600,700,800,900&display=swap" rel="stylesheet" />
 </head>
 
-<body>
-	<div class="wrapper wrapper__header-black wrapper__case-peony-bright">
+<body data-barba="wrapper">
+	<div class="wrapper wrapper__header-black">
 
 		<div class="background">
 			<svg xmlns="http://www.w3.org/2000/svg">
@@ -35,6 +35,8 @@
 				<div class="background__g1"></div>
 				<div class="background__g2"></div>
 				<div class="background__g3"></div>
+				<div class="background__g4"></div>
+				<div class="background__g5"></div>
 			</div>
 		</div>
 		<header class="header">
@@ -46,7 +48,11 @@
 			<div class="burger__line burger__line-02"></div>
 			<div class="burger__line burger__line-03"></div>
 		</button>
+		<!-- <button id="ref" style="z-index: 10; color: #FFF; background:#FFF;" type="button">ref</button> -->
 		<div class="menu ">
+			<div class="menu__background">
+				<div class="menu__background-item"></div>
+			</div>
 			<ul class="menu__list">
 				<li class="menu__item">
 					<a href="index.html" class="menu__link"> Main</a>
@@ -62,142 +68,152 @@
 	</div>
 </header>
 		<main class="page">
-			<section class="case-peony-hero">
-				<h1 class="case-peony-hero__title">AHC Peony Bright</h1>
-			</section>
-			<section class="info-peony">
-				<div class="info-peony__container">
-					<div class="info-peony__preview info-peony__preview-box">
-						<img src="img/cases/case-peony/info-peony/info-peony__image_01.jpg" alt="info-peony__preview">
-					</div>
-					<div class="info-peony__description">Working with Unilever to provide a comprehensive production
-						package for AHC’s new skincare range, Peony Bright. This
-						campaign included a brand film, cutdowns for social and a series of stills to showcase a premium
-						product with Korean
-						authenticity at its roots.</div>
-
-					<h3 class="info-peony__title title">Creative Approach</h3>
-					<div class="info-peony__content">
-						<div class="info-peony__decor">
-							<img src="img/cases/case-peony/info-peony/info-peony__image_02.jpg"
-								alt="info-peony__image">
-						</div>
-						<div class="info-peony__info">
-							<div class="info-peony__icon-dots"><img src="img/icons/four-dots.svg" alt="four-dots">
+			<div  class="dynamic-content__wrapper">
+				<div class="dynamic-content__inner dynamic-content__inner-peony-bright" data-barba="container" data-barba-namespace="case-peony-bright">
+					<section class="case-peony-hero">
+						<h1 class="case-peony-hero__title">AHC Peony Bright</h1>
+					</section>
+					<section class="info-peony">
+						<div class="info-peony__container">
+							<div class="info-peony__preview info-peony__preview-box">
+								<img src="img/cases/case-peony/info-peony/info-peony__image_01.jpg" alt="info-peony__preview">
 							</div>
-							<div class="info-peony__text">
-								<p>
-									Description: Utilising illustration in an ink and watercolour style as a way of
-									bringing
-									a soft and gentle feel to the
-									footage we would be shooting.
-								</p>
-								<p>
-									Animation of the build of these illustrations with lighting effects to accentuate
-									the
-									brightening effects of the
-									product. Sourcing appropriate talent to reinforce korean authenticity.
-								</p>
-								<p>
-									Selecting and sourcing wardrobe and props to compliment the colour and tone of the
-									product. Peony flowers, soft dusty
-									pink colours, natural, gentle.
-								</p>
-								<p>
-									Writing of a script for the 60second brand film, cutdowns and precision marketing
-									assets
-									along with a storyboard for
-									client sign off.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="execution">	
-				<div class="execution__background-images">
-					<div class="execution__background-image execution__background-image_01">
-						<img src="img/cases/case-peony/execution/execution__parallax-image_01.png" alt="execution__background-image">
-					</div>
-					<div class="execution__background-image execution__background-image_02">
-						<img src="img/cases/case-peony/execution/execution__parallax-image_02.png" alt="execution__background-image">
-					</div>
+							<div class="info-peony__description">Working with Unilever to provide a comprehensive production
+								package for AHC’s new skincare range, Peony Bright. This
+								campaign included a brand film, cutdowns for social and a series of stills to showcase a premium
+								product with Korean
+								authenticity at its roots.</div>
 					
+							<h3 class="info-peony__title title">Creative Approach</h3>
+							<div class="info-peony__content">
+								<div class="info-peony__decor">
+									<img src="img/cases/case-peony/info-peony/info-peony__image_02.jpg" alt="info-peony__image">
+								</div>
+								<div class="info-peony__info">
+									<div class="info-peony__icon-dots"><img src="img/icons/four-dots.svg" alt="four-dots">
+									</div>
+									<div class="info-peony__text">
+										<p>
+											Description: Utilising illustration in an ink and watercolour style as a way of
+											bringing
+											a soft and gentle feel to the
+											footage we would be shooting.
+										</p>
+										<p>
+											Animation of the build of these illustrations with lighting effects to accentuate
+											the
+											brightening effects of the
+											product. Sourcing appropriate talent to reinforce korean authenticity.
+										</p>
+										<p>
+											Selecting and sourcing wardrobe and props to compliment the colour and tone of the
+											product. Peony flowers, soft dusty
+											pink colours, natural, gentle.
+										</p>
+										<p>
+											Writing of a script for the 60second brand film, cutdowns and precision marketing
+											assets
+											along with a storyboard for
+											client sign off.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="execution">
+						<div class="execution__background-images">
+							<div class="execution__background-image execution__background-image_01">
+								<img src="img/cases/case-peony/execution/execution__parallax-image_01.png"
+									alt="execution__background-image">
+							</div>
+							<div class="execution__background-image execution__background-image_02">
+								<img src="img/cases/case-peony/execution/execution__parallax-image_02.png"
+									alt="execution__background-image">
+							</div>
+					
+						</div>
+						<div class="execution__container">
+							<h3 class="execution__title title">Creative Execution</h3>
+							<div class="execution__items">
+								<div class="execution__line">
+									<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+										xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1050" height="191"
+										viewBox="0 0 1109 191" fill="none" xml:space="preserve">
+										<path class="path" fill="none" stroke="#BEBDC1" stroke-linejoin="round" stroke-miterlimit="10"
+											d="M0.5 152.5L23.7603 147.869C56.1159 141.426 72.2937 138.205 87.784 133.037C103.465 127.806 118.612 121.091 133.019 112.984C147.249 104.975 160.5 95.15 187 75.5V75.5V75.5C211.4 57.831 223.6 48.9964 235.496 42.1647C313.667 -2.73017 409.514 -3.92996 488.785 38.9941C500.847 45.5259 513.265 54.0523 538.099 71.105L544.5 75.5L554.498 83.9455C653.465 167.541 799.313 163.913 894 75.5V75.5L946.37 38.0931C960.399 28.0723 975.654 19.8904 991.763 13.7473V13.7473C1014.73 4.98944 1039.1 0.5 1063.68 0.5H1085.5" />
+					
+										<path class="dashed" fill="none" stroke="white" stroke-width="10" stroke-linejoin="round"
+											stroke-miterlimit="10" stroke-dasharray="10 10"
+											d="M0.5 152.5L23.7603 147.869C56.1159 141.426 72.2937 138.205 87.784 133.037C103.465 127.806 118.612 121.091 133.019 112.984C147.249 104.975 160.5 95.15 187 75.5V75.5V75.5C211.4 57.831 223.6 48.9964 235.496 42.1647C313.667 -2.73017 409.514 -3.92996 488.785 38.9941C500.847 45.5259 513.265 54.0523 538.099 71.105L544.5 75.5L554.498 83.9455C653.465 167.541 799.313 163.913 894 75.5V75.5L946.37 38.0931C960.399 28.0723 975.654 19.8904 991.763 13.7473V13.7473C1014.73 4.98944 1039.1 0.5 1063.68 0.5H1085.5" />
+									</svg>
+								</div>
+								<div class="execution__item execution__item-01">
+									<div class="execution__text">Storyboarding <br>
+										Talent sourcing <br>
+										Prop sourcing <br>
+										Wardrobe <br>
+									</div>
+									<div class="execution__decor"></div>
+								</div>
+								<div class="execution__item execution__item-02">
+									<div class="execution__decor"></div>
+									<div class="execution__text">Filming <br>
+										Editing <br>
+										Colour grading <br>
+									</div>
+								</div>
+								<div class="execution__item execution__item-03">
+									<div class="execution__text">VO <br>
+										Music <br>
+										Subtitles <br>
+									</div>
+									<div class="execution__decor"></div>
+								</div>
+								<div class="execution__item execution__item-04">
+									<div class="execution__decor"></div>
+									<div class="execution__text">Delivery
+									</div>
+								</div>
+							</div>
+						</div>
+					
+					</section>
 				</div>
-				<div class="execution__container">
-					<h3 class="execution__title title">Creative Execution</h3>
-					<div class="execution__items">
-						<div class="execution__line">
-							<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-								y="0px" width="1050" height="191" viewBox="0 0 1109 191" fill="none" xml:space="preserve">
-								<path class="path" fill="none" stroke="#BEBDC1" stroke-linejoin="round" stroke-miterlimit="10" d="M0.5 152.5L23.7603 147.869C56.1159 141.426 72.2937 138.205 87.784 133.037C103.465 127.806 118.612 121.091 133.019 112.984C147.249 104.975 160.5 95.15 187 75.5V75.5V75.5C211.4 57.831 223.6 48.9964 235.496 42.1647C313.667 -2.73017 409.514 -3.92996 488.785 38.9941C500.847 45.5259 513.265 54.0523 538.099 71.105L544.5 75.5L554.498 83.9455C653.465 167.541 799.313 163.913 894 75.5V75.5L946.37 38.0931C960.399 28.0723 975.654 19.8904 991.763 13.7473V13.7473C1014.73 4.98944 1039.1 0.5 1063.68 0.5H1085.5" />
-							
-								<path class="dashed" fill="none" stroke="white" stroke-width="10" stroke-linejoin="round" stroke-miterlimit="10"   stroke-dasharray="10 10" d="M0.5 152.5L23.7603 147.869C56.1159 141.426 72.2937 138.205 87.784 133.037C103.465 127.806 118.612 121.091 133.019 112.984C147.249 104.975 160.5 95.15 187 75.5V75.5V75.5C211.4 57.831 223.6 48.9964 235.496 42.1647C313.667 -2.73017 409.514 -3.92996 488.785 38.9941C500.847 45.5259 513.265 54.0523 538.099 71.105L544.5 75.5L554.498 83.9455C653.465 167.541 799.313 163.913 894 75.5V75.5L946.37 38.0931C960.399 28.0723 975.654 19.8904 991.763 13.7473V13.7473C1014.73 4.98944 1039.1 0.5 1063.68 0.5H1085.5"/>
-							</svg>
-						</div>
-						<div class="execution__item execution__item-01">
-							<div class="execution__text">Storyboarding <br>
-								Talent sourcing <br>
-								Prop sourcing <br>
-								Wardrobe <br>
+				<section class="challenge">
+					<div class="challenge__container">
+						<h3 class="challenge__title title">Set us a challenge</h3>
+						<h2 class="challenge__label"> <span class="challenge__challenge-text"></span><span
+								class="challenge__cursor"></span></h2>
+						<div class="challenge__challenges">
+							<div class="challenge__challenge_01 challenge__challenge">
+								Film a commercial entirely from a bottle POV
+								<span class="challenge__cursor-unvisible"></span>
 							</div>
-							<div class="execution__decor"></div>
-						</div>
-						<div class="execution__item execution__item-02">
-							<div class="execution__decor"></div>
-							<div class="execution__text">Filming <br>
-								Editing <br>
-								Colour grading <br>
+							<div class="challenge__challenge_02 challenge__challenge">
+								Perform a small, unexpected act of kindness.
+								<span class="challenge__cursor"></span>
 							</div>
-						</div>
-						<div class="execution__item execution__item-03">
-							<div class="execution__text">VO <br>
-								Music <br>
-								Subtitles <br>
+							<div class="challenge__challenge_03 challenge__challenge">
+								Plan and execute a mini-adventure in nature.
+								<span class="challenge__cursor"></span>
 							</div>
-							<div class="execution__decor"></div>
-						</div>
-						<div class="execution__item execution__item-04">
-							<div class="execution__decor"></div>
-							<div class="execution__text">Delivery
+							<div class="challenge__challenge_04 challenge__challenge">
+								Pick a random word and create something around it.
+								<span class="challenge__cursor"></span>
+							</div>
+							<div class="challenge__challenge_05 challenge__challenge">
+								Set a fitness goal for the week
+								<span class="challenge__cursor"></span>
 							</div>
 						</div>
+	
+						<a href="" class="challenge__button">Send us a challenge</a>
 					</div>
-				</div>
-
-			</section>
-			<section class="challenge">
-				<div class="challenge__container">
-					<h3 class="challenge__title title">Set us a challenge</h3>
-					<h2 class="challenge__label"> <span class="challenge__challenge-text"></span><span
-							class="challenge__cursor"></span></h2>
-					<div class="challenge__challenges">
-						<div class="challenge__challenge_01 challenge__challenge">
-							Film a commercial entirely from a bottle POV
-							<span class="challenge__cursor-unvisible"></span>
-						</div>
-						<div class="challenge__challenge_02 challenge__challenge">
-							Perform a small, unexpected act of kindness.
-							<span class="challenge__cursor"></span>
-						</div>
-						<div class="challenge__challenge_03 challenge__challenge">
-							Plan and execute a mini-adventure in nature.
-							<span class="challenge__cursor"></span>
-						</div>
-						<div class="challenge__challenge_04 challenge__challenge">
-							Pick a random word and create something around it.
-							<span class="challenge__cursor"></span>
-						</div>
-						<div class="challenge__challenge_05 challenge__challenge">
-							Set a fitness goal for the week
-							<span class="challenge__cursor"></span>
-						</div>
-					</div>
-
-					<a href="" class="challenge__button">Send us a challenge</a>
-				</div>
-				<!-- <div class="interactive-3"></div> -->
-			</section>
+					<!-- <div class="interactive-3"></div> -->
+				</section>
+			</div>
+			
 		</main>
 		<footer class="footer">
 	<div class="footer__container">
@@ -225,6 +241,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Observer.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/CustomEase.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+
 <script src="js/app.min.js"></script>
 
 </html>
