@@ -966,6 +966,7 @@ section {
   display: none;
 }
 .background__gradients-container {
+  filter: blur(80px);
   width: 100%;
   height: 100%;
 }
